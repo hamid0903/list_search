@@ -6,4 +6,10 @@ def find_min(data):
     returns: minimum number in the list
     """
 
-    return 0
+    n=data[0]
+
+    for i in data:
+        if i<n:
+            n=i
+    return n
+print(find_min([5,9,10,15]))
